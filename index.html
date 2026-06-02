@@ -23,7 +23,7 @@ background:#111;
 color:white;
 font-family:Arial,sans-serif;
 text-align:center;
-padding:40px;
+padding:20px;
 }
 
 h1{
@@ -31,7 +31,19 @@ font-size:38px;
 margin-top:20px;
 margin-bottom:10px;
 }
-    @media (max-width:768px){
+
+.logo{
+width:100%;
+max-width:450px;
+height:auto;
+border-radius:15px;
+}
+
+@media (max-width:768px){
+
+body{
+padding:15px;
+}
 
 h1{
 font-size:26px;
@@ -56,12 +68,7 @@ margin-top:20px;
 }
 
 </style>
-.logo{
-  width:90%;
-  max-width:350px;
-  height:auto;
-  border-radius:15px;
-}
+
 </head>
 
 <body>
@@ -71,8 +78,9 @@ margin-top:20px;
 <h1>El Garnachan Radio In Store</h1>
 
 <p>Escucha nuestra señal en vivo</p>
+    <div style="margin-top:20px;"></div>
 <script id='sonic_js' data-port='8006' src='https://stream6.hcnetwork.net/cp/widgets.js?r=811'></script>
-<h2>▶ Escuchar en Vivo</h2>
+<h2>🎧 Escuchar en Vivo</h2>
 
 <audio controls autoplay style="width:100%;max-width:700px;">
     <source src="https://stream6.hcnetwork.net:8006/stream" type="audio/mpeg">
